@@ -8,19 +8,23 @@ import {
   ChevronDown,
   User,
   LogOut,
-  HelpCircle
+  HelpCircle,
+  Shield
 } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 export function Header() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleLogout = () => {
     navigate("/");
   };
+
+  const isAdmin = location.pathname === "/admin";
 
   return (
     <header className="flex h-16 items-center justify-between border-b border-border bg-card px-4">
@@ -108,6 +112,13 @@ export function Header() {
                 <button className="flex w-full items-center gap-3 px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground">
                   <Settings className="h-4 w-4" />
                   Settings
+                </button>
+                <button 
+                  onClick={() => navigate(isAdmin ? "/dashboard" : "/admin")}
+                  className="flex w-full items-center gap-3 px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+                >
+                  <Shield className="h-4 w-4" />
+                  {isAdmin ? "User Dashboard" : "Admin Panel"}
                 </button>
                 <button className="flex w-full items-center gap-3 px-4 py-2 text-sm text-muted-foreground transition-colors hover:bg-accent hover:text-foreground">
                   <HelpCircle className="h-4 w-4" />
