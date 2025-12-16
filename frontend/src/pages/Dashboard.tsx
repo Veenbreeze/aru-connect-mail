@@ -23,7 +23,7 @@ const sampleEmails: Email[] = [
   },
   {
     id: "2",
-    from: "Dr. Sarah Mwanza",
+    from: "Dr. samia",
     fromEmail: "s.mwanza@aru.ac.tz",
     subject: "RE: Research Proposal Feedback",
     preview:
