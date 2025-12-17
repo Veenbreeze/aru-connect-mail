@@ -35,6 +35,7 @@ export default function Setting() {
         <div className="bg-card rounded-xl p-6 shadow-md">
           <h2 className="text-xl font-semibold mb-4">Privacy & Security</h2>
           <p>Two-factor authentication, data privacy, and security preferences.</p>
+          <p>contact the cr for more information</p>
         </div>
       </main>
       <Footer />

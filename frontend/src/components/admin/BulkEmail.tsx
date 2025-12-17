@@ -62,7 +62,7 @@ export function BulkEmail() {
     });
     return count;
   };
-
+   // Handlers for selecting/deselecting groups and departments
   const handleGroupToggle = (groupId: string) => {
     setSelectedGroups((prev) =>
       prev.includes(groupId)

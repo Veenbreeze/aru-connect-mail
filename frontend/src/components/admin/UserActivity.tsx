@@ -12,7 +12,7 @@ import {
   AlertCircle
 } from "lucide-react";
 import { format } from "date-fns";
-
+// Dummy data for user activity logs with various actions and statuses
 const activityLogs = [
   { id: 1, user: "john.doe@students.aru.ac.tz", action: "Login", ip: "192.168.1.45", time: new Date(2024, 11, 11, 9, 23), status: "success" },
   { id: 2, user: "sarah.mwanza@aru.ac.tz", action: "Email Sent", ip: "192.168.1.102", time: new Date(2024, 11, 11, 9, 18), status: "success" },

@@ -11,7 +11,7 @@ import {
   CartesianGrid
 } from "recharts";
 import { TrendingUp, TrendingDown, Mail, Send, Inbox, Trash2 } from "lucide-react";
-
+// Dummy data for charts and statistics
 const monthlyData = [
   { month: "Jan", sent: 4500, received: 5200, deleted: 800 },
   { month: "Feb", sent: 5200, received: 5800, deleted: 950 },
