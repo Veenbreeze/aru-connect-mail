@@ -9,7 +9,7 @@ import {
   Shield
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-
+// Admin Sidebar Component
 interface AdminSidebarProps {
   activeSection: string;
   onSectionChange: (section: string) => void;
