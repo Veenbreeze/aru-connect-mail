@@ -1,3 +1,5 @@
+// Bulk Email Component for Admin Dashboard. this allows admins to compose and send bulk emails to selected user groups.
+import React, { useReducer, useMemo } from "react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { 
