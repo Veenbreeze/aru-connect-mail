@@ -26,7 +26,7 @@ interface Announcement {
   status: "draft" | "published" | "scheduled";
   views: number;
 }
-
+// Initial dummy data for announcements which can be replaced with real data from backend
 const initialAnnouncements: Announcement[] = [
   {
     id: "1",
