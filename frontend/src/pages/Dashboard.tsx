@@ -6,7 +6,7 @@ import { EmailViewer } from "@/components/email/EmailViewer";
 import { ComposeModal } from "@/components/email/ComposeModal";
 import { Footer } from "@/components/layout/Footer";
 
-// Sample email data
+// Sample email data which would typically come from an API
 const sampleEmails: Email[] = [
   {
     id: "1",
