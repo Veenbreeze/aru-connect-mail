@@ -191,9 +191,9 @@ export function DepartmentAnnouncements() {
           New Announcement
         </motion.button>
       </div>
-
+       //thr announcements list how each announcement looks like
       {/* Announcements List */}
-      <div className="grid gap-4">
+      <div className="grid gap-6 md:grid-cols-2">
         {announcements.map((announcement, index) => (
           <motion.div
             key={announcement.id}
@@ -250,7 +250,7 @@ export function DepartmentAnnouncements() {
           </motion.div>
         ))}
       </div>
-
+       //how the create/edit modal looks like 
       {/* Create/Edit Modal */}
       <AnimatePresence>
         {showModal && (
