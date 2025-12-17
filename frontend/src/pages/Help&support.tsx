@@ -2,7 +2,7 @@ import { Header } from "@/components/email/Header";
 import { Footer } from "@/components/layout/Footer";
 import { useNavigate } from "react-router-dom";
 import { ChevronLeft } from "lucide-react";
-
+// Help & Support Page Component
 export default function HelpSupport() {
   const navigate = useNavigate();
 
