@@ -1,3 +1,4 @@
+//this component provides an overview of analytics for the admin dashboard
 import { motion } from "framer-motion";
 import { 
   Mail, 
