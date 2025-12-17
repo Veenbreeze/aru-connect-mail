@@ -60,7 +60,7 @@ export function AdminSidebar({ activeSection, onSectionChange }: AdminSidebarPro
           </motion.button>
         ))}
       </nav>
-
+      // we add this section for help or support info so that admins can easily reach out if they need assistance
       {/* Help Section */}
       <div className="border-t border-border p-4">
         <div className="rounded-lg bg-muted/50 p-4">
