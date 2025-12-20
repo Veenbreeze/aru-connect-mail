@@ -7,7 +7,7 @@ interface NavLinkCompatProps extends Omit<NavLinkProps, "className"> {
   activeClassName?: string;
   pendingClassName?: string;
 }
-
+// A NavLink component that supports active and pending class names
 const NavLink = forwardRef<HTMLAnchorElement, NavLinkCompatProps>(
   ({ className, activeClassName, pendingClassName, to, ...props }, ref) => {
     return (

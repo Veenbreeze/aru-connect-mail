@@ -1,3 +1,4 @@
+//page thart allows admin to create, edit, delete department announcements
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
@@ -25,7 +26,7 @@ interface Announcement {
   status: "draft" | "published" | "scheduled";
   views: number;
 }
-
+// Initial dummy data for announcements which can be replaced with real data from backend
 const initialAnnouncements: Announcement[] = [
   {
     id: "1",
@@ -190,9 +191,9 @@ export function DepartmentAnnouncements() {
           New Announcement
         </motion.button>
       </div>
-
+       //thr announcements list how each announcement looks like
       {/* Announcements List */}
-      <div className="grid gap-4">
+      <div className="grid gap-6 md:grid-cols-2">
         {announcements.map((announcement, index) => (
           <motion.div
             key={announcement.id}
@@ -249,7 +250,7 @@ export function DepartmentAnnouncements() {
           </motion.div>
         ))}
       </div>
-
+       //how the create/edit modal looks like 
       {/* Create/Edit Modal */}
       <AnimatePresence>
         {showModal && (

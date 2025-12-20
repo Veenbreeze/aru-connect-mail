@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+
 import { 
   Search, 
   Filter, 
@@ -24,7 +25,7 @@ interface User {
   lastActive: string;
   emailsCount: number;
 }
-
+// Dummy data for users in the system which can be replaced with real data from backend
 const users: User[] = [
   { id: "1", name: "John Doe", email: "john.doe@students.aru.ac.tz", role: "student", department: "Architecture", status: "active", lastActive: "2 min ago", emailsCount: 156 },
   { id: "2", name: "Dr. Sarah Mwanza", email: "s.mwanza@aru.ac.tz", role: "lecturer", department: "Earth Sciences", status: "active", lastActive: "15 min ago", emailsCount: 847 },
@@ -48,7 +49,7 @@ const statusColors = {
   inactive: "text-muted-foreground",
   suspended: "text-destructive",
 };
-
+// Main User Management Component
 export function UserManagement() {
   const [searchQuery, setSearchQuery] = useState("");
   const [filterRole, setFilterRole] = useState("all");
